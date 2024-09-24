@@ -1,0 +1,111 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 500,
+    "title": "Visa Grants to Australia by Country (2022-23)",
+    "projection": {
+      "type": "mercator"
+    },
+    "layer": [
+      {
+        "title": "Visitor Visa Grants",
+        "data": {
+          "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+          "format": {"type": "topojson", "feature": "countries"}
+        },
+        "mark": {"type": "geoshape"},
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "values": [
+                  {"id": 826, "country": "United Kingdom", "visitor_visas": 460157},
+                  {"id": 840, "country": "United States", "visitor_visas": 456565},
+                  {"id": 356, "country": "India", "visitor_visas": 357038}
+                ]
+              },
+              "key": "id",
+              "fields": ["visitor_visas"]
+            }
+          }
+        ],
+        "encoding": {
+          "color": {
+            "field": "visitor_visas",
+            "type": "quantitative",
+            "scale": {"scheme": "blues"},
+            "title": "Visitor Visas"
+          }
+        }
+      },
+      {
+        "title": "Student Visa Grants",
+        "data": {
+          "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+          "format": {"type": "topojson", "feature": "countries"}
+        },
+        "mark": {"type": "geoshape"},
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "values": [
+                  {"id": 356, "country": "India", "student_visas": 102696},
+                  {"id": 156, "country": "China", "student_visas": 98506},
+                  {"id": 524, "country": "Nepal", "student_visas": 40731}
+                ]
+              },
+              "key": "id",
+              "fields": ["student_visas"]
+            }
+          }
+        ],
+        "encoding": {
+          "color": {
+            "field": "student_visas",
+            "type": "quantitative",
+            "scale": {"scheme": "greens"},
+            "title": "Student Visas"
+          }
+        }
+      },
+      {
+        "title": "Working Holiday Maker Visa Grants",
+        "data": {
+          "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+          "format": {"type": "topojson", "feature": "countries"}
+        },
+        "mark": {"type": "geoshape"},
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "values": [
+                  {"id": 826, "country": "United Kingdom", "whm_visas": 38177},
+                  {"id": 250, "country": "France", "whm_visas": 26896},
+                  {"id": 372, "country": "Ireland", "whm_visas": 21525}
+                ]
+              },
+              "key": "id",
+              "fields": ["whm_visas"]
+            }
+          }
+        ],
+        "encoding": {
+          "color": {
+            "field": "whm_visas",
+            "type": "quantitative",
+            "scale": {"scheme": "reds"},
+            "title": "Working Holiday Maker Visas"
+          }
+        }
+      }
+    ],
+    "resolve": {
+      "scale": {"color": "independent"}
+    }
+  }
+  
