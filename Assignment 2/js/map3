@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/aus_immigration.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.Country === 'Australia'"
+      }
+    ],
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal"},
+          "y": {"field": "Emigrants from Afghanistan", "type": "quantitative"},
+          "color": {"value": "blue"},
+          "tooltip": [{"field": "Year"}, {"field": "Emigrants from Afghanistan"}]
+        }
+      },
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal"},
+          "y": {"field": "Immigrants to Afghanistan", "type": "quantitative"},
+          "color": {"value": "orange"},
+          "tooltip": [{"field": "Year"}, {"field": "Immigrants to Afghanistan"}]
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "axis": {"labelAngle": 0}
+      }
+    }
+  }
+  
