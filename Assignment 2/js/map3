@@ -12,7 +12,7 @@
       "value": "1990",
       "bind": {
         "input": "select",
-        "options": ["1990", "1995", "2000", "2005", "2010"],
+        "options": ["1990", "1995", "2000", "2005", "2010", "2015", "2020"],
         "name": "Select Year: "
       }
     }
@@ -35,7 +35,7 @@
     },
     {
       "data": {
-        "url": "data_url_placeholder.csv"
+        "url": "path_to_reshaped_combined_full_data.csv"
       },
       "transform": [
         {
@@ -48,8 +48,7 @@
               "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
               "format": {"type": "topojson", "feature": "countries"}
             },
-            "key": "properties.name",
-            "fields": ["Country"]
+            "key": "properties.name"
           },
           "as": "geo"
         }
@@ -70,7 +69,8 @@
         },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Population", "type": "quantitative", "title": "Population"}
+          {"field": "Population", "type": "quantitative", "title": "Population"},
+          {"field": "Year", "type": "nominal", "title": "Year"}
         ],
         "shape": {
           "field": "geo",
