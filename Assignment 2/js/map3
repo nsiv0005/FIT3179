@@ -1,41 +1,82 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/aus_immigration.csv"
-    },
-    "transform": [
-      {
-        "filter": "datum.Country === 'Australia'"
-      }
-    ],
-    "layer": [
-      {
-        "mark": "line",
-        "encoding": {
-          "x": {"field": "Year", "type": "temporal"},
-          "y": {"field": "Emigrants from Afghanistan", "type": "quantitative"},
-          "color": {"value": "blue"},
-          "tooltip": [{"field": "Year"}, {"field": "Emigrants from Afghanistan"}]
-        }
-      },
-      {
-        "mark": "line",
-        "encoding": {
-          "x": {"field": "Year", "type": "temporal"},
-          "y": {"field": "Immigrants to Afghanistan", "type": "quantitative"},
-          "color": {"value": "orange"},
-          "tooltip": [{"field": "Year"}, {"field": "Immigrants to Afghanistan"}]
-        }
-      }
-    ],
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal",
-        "axis": {"labelAngle": 0}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "Immigration Data to Australia by Country",
+  "projection": {
+    "type": "equalEarth"
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": "1990",
+      "bind": {
+        "input": "select",
+        "options": ["1990", "1995", "2000", "2005", "2010"],
+        "name": "Select Year: "
       }
     }
-  }
-  
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white"
+      },
+      "encoding": {}
+    },
+    {
+      "data": {
+        "url": "data_url_placeholder.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.Year == selectedYear"
+        },
+        {
+          "lookup": "Country",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/vega/vega-datasets/master/data/world-110m.json",
+              "format": {"type": "topojson", "feature": "countries"}
+            },
+            "key": "properties.name",
+            "fields": ["Country"]
+          },
+          "as": "geo"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "lightgray",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "color": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues"
+          },
+          "legend": {"title": "Population"}
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {"field": "Population", "type": "quantitative", "title": "Population"}
+        ],
+        "shape": {
+          "field": "geo",
+          "type": "geojson"
+        }
+      }
+    }
+  ]
+}
