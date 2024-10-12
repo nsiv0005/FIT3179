@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Table%201.2%20Estimated%20resident%20population%20by%20country%20of%20birth(a)(b).csv"  
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Country", "type": "nominal"},
+      "y": {"field": "2023_000", "type": "quantitative"}
+      
+    }
+  }
+  
