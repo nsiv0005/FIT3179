@@ -15,7 +15,7 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Table%201.2%20Estimated%20resident%20population%20by%20country%20of%20birth(a)(b).csv"
+          "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Table_1.2_Estimated_resident_population_by_country_of_birth.csv"
         },
         "transform": [
           {
@@ -25,7 +25,7 @@
                 "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/ne_110m.json",
                 "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
               },
-              "key": "properties.name"
+              "key": "properties.NAME"
             },
             "as": "geo"
           }
