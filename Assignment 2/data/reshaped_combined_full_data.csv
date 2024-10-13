@@ -265,13 +265,13 @@ Year,Country,Population
 2010,Caribbean,4870.0
 2015,Caribbean,5685.0
 2020,Caribbean,6184.0
-1990,Cayman Islands.2,-20.0
-1995,Cayman Islands.2,-44.0
-2000,Cayman Islands.2,-57.0
-2005,Cayman Islands.2,-79.0
-2010,Cayman Islands.2,-93.0
-2015,Cayman Islands.2,-57.0
-2020,Cayman Islands.2,-48.0
+1990,Cayman Islands,-20.0
+1995,Cayman Islands,-44.0
+2000,Cayman Islands,-57.0
+2005,Cayman Islands,-79.0
+2010,Cayman Islands,-93.0
+2015,Cayman Islands,-57.0
+2020,Cayman Islands,-48.0
 1990,Central African Republic,-3.0
 1995,Central African Republic,-10.0
 2000,Central African Republic,-6.0
