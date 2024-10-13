@@ -17,6 +17,15 @@
         "step": 5,
         "name": "Select Year: "
       }
+    },
+    {
+      "name": "dataType",
+      "value": "Percentage",
+      "bind": {
+        "input": "select",
+        "options": ["Percentage", "Population"],
+        "name": "Select Data Type: "
+      }
     }
   ],
   "layer": [
@@ -32,8 +41,7 @@
         "type": "geoshape",
         "fill": "lightgray",
         "stroke": "white"
-      },
-      "encoding": {}
+      }
     },
     {
       "data": {
@@ -42,6 +50,10 @@
       "transform": [
         {
           "filter": "datum.Year == selectedYear"
+        },
+        {
+          "calculate": "datum[dataType]",
+          "as": "selectedData"
         },
         {
           "lookup": "Country",
@@ -62,17 +74,32 @@
       },
       "encoding": {
         "color": {
-          "field": "Percentage",
+          "field": "selectedData",
           "type": "quantitative",
           "scale": {
-            "type": "diverging",
-            "scheme": "reds"
+            "domain": {
+              "signal": "dataType === 'Percentage' ? [0, 15] : [0, 1000000]"
+            },
+            "scheme": {
+              "signal": "dataType === 'Percentage' ? 'bluegreen' : 'reds'"
+            }
           },
-          "legend": {"title": "Number of People"}
+          "legend": {
+            "title": {
+              "signal": "dataType === 'Percentage' ? 'Percentage of Total Population (%)' : 'Number of Migrants'"
+            }
+          }
         },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Percentage", "type": "quantitative", "title": "Number of People"},
+          {
+            "field": "selectedData",
+            "type": "quantitative",
+            "title": {
+              "signal": "dataType === 'Percentage' ? 'Percentage of Total Population (%)' : 'Number of Migrants'"
+            },
+            "format": ".2f"
+          },
           {"field": "Year", "type": "nominal", "title": "Year"}
         ],
         "shape": {
