@@ -2,17 +2,19 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 450,
-  "title": "Immigration Data to Australia by Country",
+  "title": "Immigration Data to Australia by Country (Normalized Percentage)",
   "projection": {
     "type": "equalEarth"
   },
   "params": [
     {
       "name": "selectedYear",
-      "value": "1990",
+      "value": 1990,
       "bind": {
-        "input": "select",
-        "options": ["1990", "1995", "2000", "2005", "2010", "2015", "2020"],
+        "input": "range",
+        "min": 1990,
+        "max": 2020,
+        "step": 5,
         "name": "Select Year: "
       }
     }
@@ -35,7 +37,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/reshaped_combined_full_data.csv"
+        "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/normalized_population_percentages.csv"
       },
       "transform": [
         {
@@ -60,17 +62,17 @@
       },
       "encoding": {
         "color": {
-          "field": "Population",
+          "field": "Percentage",
           "type": "quantitative",
           "scale": {
-            
-            "scheme": "reds"
+            "scheme": "blues",  
+            "domain": [0, 100]  
           },
-          "legend": {"title": "Population"}
+          "legend": {"title": "Percentage of Total Population (%)"}
         },
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Population", "type": "quantitative", "title": "Population"},
+          {"field": "Percentage", "type": "quantitative", "title": "Percentage of Total Population (%)"},
           {"field": "Year", "type": "nominal", "title": "Year"}
         ],
         "shape": {
