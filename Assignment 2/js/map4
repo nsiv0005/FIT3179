@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "Net Overseas Migration (NOM) in 2022 and 2023",
+  "projection": {
+    "type": "equalEarth"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/AusTopo/Australia-SA3-Map/main/sa3_aus.json",
+        "format": {
+          "type": "topojson",
+          "feature": "sa3"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white"
+      },
+      "encoding": {}
+    },
+    {
+      "data": {
+        "url": "path_to_your_aus_locations.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {
+          "field": "NOM in 2022 and 2023",
+          "type": "quantitative",
+          "scale": {"range": [100, 1000]}
+        },
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "legend": {"title": "Region"}
+        },
+        "tooltip": [
+          {"field": "SA3 Area", "type": "nominal", "title": "SA3 Area"},
+          {"field": "NOM in 2022 and 2023", "type": "quantitative", "title": "NOM"}
+        ]
+      }
+    }
+  ]
+}
