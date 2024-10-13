@@ -76,13 +76,6 @@ Year,Country,Population
 2010,Aruba,60.0
 2015,Aruba,70.0
 2020,Aruba,75.0
-1990,Australia,3654200.0
-1995,Australia,3812018.0
-2000,Australia,4004414.0
-2005,Australia,4449261.0
-2010,Australia,5396031.0
-2015,Australia,6211572.0
-2020,Australia,7087095.0
 1990,Austria,21606.0
 1995,Austria,21618.0
 2000,Austria,19917.0
@@ -125,9 +118,9 @@ Year,Country,Population
 2010,Barbados,407.0
 2015,Barbados,426.0
 2020,Barbados,460.0
-1990,Belarus,239.0
-1995,Belarus,804.0
-2000,Belarus,1332.0
+1990,Belar,239.0
+1995,Belar,804.0
+2000,Belar,1332.0
 2005,Belarus,1573.0
 2010,Belarus,1814.0
 2015,Belarus,2152.0
@@ -181,13 +174,13 @@ Year,Country,Population
 2010,Saba,0.0
 2015,Saba,0.0
 2020,Saba,0.0
-1990,Herzegovina,22312.0
-1995,Herzegovina,26278.0
-2000,Herzegovina,28650.0
-2005,Herzegovina,38394.0
-2010,Herzegovina,39730.0
-2015,Herzegovina,36750.0
-2020,Herzegovina,38485.0
+1990,Bosnia and Herzegovina,22312.0
+1995,Bosnia and Herzegovina,26278.0
+2000,Bosnia and Herzegovina,28650.0
+2005,Bosnia and Herzegovina,38394.0
+2010,Bosnia and Herzegovina,39730.0
+2015,Bosnia and Herzegovina,36750.0
+2020,Bosnia and Herzegovina,38485.0
 1990,Botswana,33.0
 1995,Botswana,302.0
 2000,Botswana,556.0
@@ -202,13 +195,13 @@ Year,Country,Population
 2010,Brazil,15965.0
 2015,Brazil,26101.0
 2020,Brazil,42574.0
-1990,Islands,-6.0
-1995,Islands,-11.0
-2000,Islands,-16.0
-2005,Islands,-19.0
-2010,Islands,-21.0
-2015,Islands,-24.0
-2020,Islands,-27.0
+1990,British Virgin Islands,-6.0
+1995,British Virgin Islands,-11.0
+2000,British Virgin Islands,-16.0
+2005,British Virgin Islands,-19.0
+2010,British Virgin Islands,-21.0
+2015,British Virgin Islands,-24.0
+2020,British Virgin Islands,-27.0
 1990,Brunei,1358.0
 1995,Brunei,1539.0
 2000,Brunei,1618.0
@@ -223,13 +216,13 @@ Year,Country,Population
 2010,Bulgaria,3471.0
 2015,Bulgaria,3730.0
 2020,Bulgaria,4066.0
-1990,Faso,30.0
-1995,Faso,15.0
-2000,Faso,10.0
-2005,Faso,20.0
-2010,Faso,40.0
-2015,Faso,60.0
-2020,Faso,63.0
+1990,Burkina Faso,30.0
+1995,Burkina Faso,15.0
+2000,Burkina Faso,10.0
+2005,Burkina Faso,20.0
+2010,Burkina Faso,40.0
+2015,Burkina Faso,60.0
+2020,Burkina Faso,63.0
 1990,Burundi,15.0
 1995,Burundi,7.0
 2000,Burundi,30.0
@@ -259,12 +252,12 @@ Year,Country,Population
 2015,Canada,31610.0
 2020,Canada,36112.0
 1990,Verde,20.0
-1995,Verde,10.0
-2000,Verde,30.0
-2005,Verde,30.0
-2010,Verde,30.0
-2015,Verde,40.0
-2020,Verde,42.0
+1995,Cape Verde,10.0
+2000,Cape Verde,30.0
+2005,Cape Verde,30.0
+2010,Cape Verde,30.0
+2015,Cape Verde,40.0
+2020,Cape Verde,42.0
 1990,Caribbean,2634.0
 1995,Caribbean,3301.0
 2000,Caribbean,3976.0
@@ -272,20 +265,20 @@ Year,Country,Population
 2010,Caribbean,4870.0
 2015,Caribbean,5685.0
 2020,Caribbean,6184.0
-1990,Islands.2,-20.0
-1995,Islands.2,-44.0
-2000,Islands.2,-57.0
-2005,Islands.2,-79.0
-2010,Islands.2,-93.0
-2015,Islands.2,-57.0
-2020,Islands.2,-48.0
-1990,Republic,-3.0
-1995,Republic,-10.0
-2000,Republic,-6.0
-2005,Republic,-3.0
-2010,Republic,7.0
-2015,Republic,20.0
-2020,Republic,32.0
+1990,Cayman Islands.2,-20.0
+1995,Cayman Islands.2,-44.0
+2000,Cayman Islands.2,-57.0
+2005,Cayman Islands.2,-79.0
+2010,Cayman Islands.2,-93.0
+2015,Cayman Islands.2,-57.0
+2020,Cayman Islands.2,-48.0
+1990,Central African Republic,-3.0
+1995,Central African Republic,-10.0
+2000,Central African Republic,-6.0
+2005,Central African Republic,-3.0
+2010,Central African Republic,7.0
+2015,Central African Republic,20.0
+2020,Central African Republic,32.0
 1990,Chad,15.0
 1995,Chad,12.0
 2000,Chad,40.0
@@ -328,13 +321,13 @@ Year,Country,Population
 2010,Comoros,0.0
 2015,Comoros,0.0
 2020,Comoros,0.0
-1990,Congo,134.0
-1995,Congo,130.0
-2000,Congo,130.0
-2005,Congo,710.0
-2010,Congo,1030.0
-2015,Congo,1610.0
-2020,Congo,1884.0
+1990,Democratic Republic of the Congo,134.0
+1995,Democratic Republic of the Congo,130.0
+2000,Democratic Republic of the Congo,130.0
+2005,Democratic Republic of the Congo,710.0
+2010,Democratic Republic of the Congo,1030.0
+2015,Democratic Republic of the Congo,1610.0
+2020,Democratic Republic of the Congo,1884.0
 1990,Islands.6,2180.0
 1995,Islands.6,3442.0
 2000,Islands.6,4476.0
@@ -342,13 +335,13 @@ Year,Country,Population
 2010,Islands.6,6294.0
 2015,Islands.6,7652.0
 2020,Islands.6,8319.0
-1990,Rica,163.0
-1995,Rica,257.0
-2000,Rica,299.0
-2005,Rica,346.0
-2010,Rica,373.0
-2015,Rica,433.0
-2020,Rica,501.0
+1990,Costa Rica,163.0
+1995,Costa Rica,257.0
+2000,Costa Rica,299.0
+2005,Costa Rica,346.0
+2010,Costa Rica,373.0
+2015,Costa Rica,433.0
+2020,Costa Rica,501.0
 1990,d'Ivoire,0.0
 1995,d'Ivoire,0.0
 2000,d'Ivoire,0.0
@@ -391,13 +384,13 @@ Year,Country,Population
 2010,Czechia,13221.0
 2015,Czechia,12689.0
 2020,Czechia,13344.0
-1990,Congo.2,255.0
-1995,Congo.2,291.0
-2000,Congo.2,310.0
-2005,Congo.2,360.0
-2010,Congo.2,2470.0
-2015,Congo.2,4270.0
-2020,Congo.2,5535.0
+1990,Democratic Republic of Congo.2,255.0
+1995,Democratic Republic of Congo.2,291.0
+2000,Democratic Republic of Congo.2,310.0
+2005,Democratic Republic of Congo.2,360.0
+2010,Democratic Republic of Congo.2,2470.0
+2015,Democratic Republic of Congo.2,4270.0
+2020,Democratic Republic of Congo.2,5535.0
 1990,Denmark,8758.0
 1995,Denmark,8696.0
 2000,Denmark,8282.0
@@ -419,13 +412,13 @@ Year,Country,Population
 2010,Dominica,24.0
 2015,Dominica,33.0
 2020,Dominica,36.0
-1990,Republic.2,-44.0
-1995,Republic.2,-33.0
-2000,Republic.2,-12.0
-2005,Republic.2,50.0
-2010,Republic.2,101.0
-2015,Republic.2,170.0
-2020,Republic.2,194.0
+1990,Dominican Republic.2,-44.0
+1995,Dominican Republic.2,-33.0
+2000,Dominican Republic.2,-12.0
+2005,Dominican Republic.2,50.0
+2010,Dominican Republic.2,101.0
+2015,Dominican Republic.2,170.0
+2020,Dominican Republic.2,194.0
 1990,Ecuador,960.0
 1995,Ecuador,1176.0
 2000,Ecuador,1305.0
@@ -482,20 +475,20 @@ Year,Country,Population
 2010,Ethiopia,8970.0
 2015,Ethiopia,13130.0
 2020,Ethiopia,15951.0
-1990,Islands.8,17.0
-1995,Islands.8,19.0
-2000,Islands.8,30.0
-2005,Islands.8,40.0
-2010,Islands.8,40.0
-2015,Islands.8,30.0
-2020,Islands.8,20.0
-1990,Islands.10,71.0
-1995,Islands.10,103.0
-2000,Islands.10,120.0
-2005,Islands.10,106.0
-2010,Islands.10,92.0
-2015,Islands.10,78.0
-2020,Islands.10,66.0
+1990,Faeroe Islands.8,17.0
+1995,Faeroe Islands.8,19.0
+2000,Faeroe Islands.8,30.0
+2005,Faeroe Islands.8,40.0
+2010,Faeroe Islands.8,40.0
+2015,Faeroe Islands.8,30.0
+2020,FFaeroe Islands.8,20.0
+1990,Falkland Islands.10,71.0
+1995,Falkland Islands.10,103.0
+2000,Falkland Islands.10,120.0
+2005,Falkland Islands.10,106.0
+2010,Falkland Islands.10,92.0
+2015,Falkland Islands.10,78.0
+2020,Falkland Islands.10,66.0
 1990,Fiji,36166.0
 1995,Fiji,38939.0
 2000,Fiji,45211.0
@@ -517,20 +510,20 @@ Year,Country,Population
 2010,France,20281.0
 2015,France,27982.0
 2020,France,31921.0
-1990,Guiana,6.0
-1995,Guiana,3.0
-2000,Guiana,10.0
-2005,Guiana,10.0
-2010,Guiana,10.0
-2015,Guiana,20.0
-2020,Guiana,20.0
-1990,Polynesia,173.0
-1995,Polynesia,248.0
-2000,Polynesia,276.0
-2005,Polynesia,313.0
-2010,Polynesia,396.0
-2015,Polynesia,460.0
-2020,Polynesia,520.0
+1990,French Guiana,6.0
+1995,French Guiana,3.0
+2000,French Guiana,10.0
+2005,French Guiana,10.0
+2010,French Guiana,10.0
+2015,French Guiana,20.0
+2020,French Guiana,20.0
+1990,French Polynesia,173.0
+1995,French Polynesia,248.0
+2000,French Polynesia,276.0
+2005,French Polynesia,313.0
+2010,French Polynesia,396.0
+2015,French Polynesia,460.0
+2020,French Polynesia,520.0
 1990,Gabon,20.0
 1995,Gabon,10.0
 2000,Gabon,20.0
@@ -650,13 +643,13 @@ Year,Country,Population
 2010,Honduras,240.0
 2015,Honduras,320.0
 2020,Honduras,343.0
-1990,Kong,51760.0
-1995,Kong,61884.0
-2000,Kong,67914.0
-2005,Kong,71642.0
-2010,Kong,76557.0
-2015,Kong,85952.0
-2020,Kong,97581.0
+1990,Hong Kong,51760.0
+1995,Hong Kong,61884.0
+2000,Hong Kong,67914.0
+2005,Hong Kong,71642.0
+2010,Hong Kong,76557.0
+2015,Hong Kong,85952.0
+2020,Hong Kong,97581.0
 1990,Hungary,28271.0
 1995,Hungary,27942.0
 2000,Hungary,25488.0
@@ -706,13 +699,13 @@ Year,Country,Population
 2010,Ireland,64508.0
 2015,Ireland,83929.0
 2020,Ireland,86174.0
-1990,Man,608.0
-1995,Man,597.0
-2000,Man,553.0
-2005,Man,502.0
-2010,Man,524.0
-2015,Man,622.0
-2020,Man,810.0
+1990,Isle of Man,608.0
+1995,Isle of Man,597.0
+2000,Isle of Man,553.0
+2005,Isle of Man,502.0
+2010,Isle of Man,524.0
+2015,Isle of Man,622.0
+2020,Isle of Man,810.0
 1990,Israel,5654.0
 1995,Israel,4923.0
 2000,Israel,4749.0
@@ -895,13 +888,13 @@ Year,Country,Population
 2010,Malta,45199.0
 2015,Malta,38064.0
 2020,Malta,32266.0
-1990,Islands.12,26.0
-1995,Islands.12,18.0
-2000,Islands.12,30.0
-2005,Islands.12,40.0
-2010,Islands.12,40.0
-2015,Islands.12,50.0
-2020,Islands.12,52.0
+1990,Marshall Islands.12,26.0
+1995,Marshall Islands.12,18.0
+2000,Marshall Islands.12,30.0
+2005,Marshall Islands.12,40.0
+2010,Marshall Islands.12,40.0
+2015,Marshall Islands.12,50.0
+2020,Marshall Islands.12,52.0
 1990,Martinique,20.0
 1995,Martinique,20.0
 2000,Martinique,40.0
@@ -937,13 +930,6 @@ Year,Country,Population
 2010,Mexico,2965.0
 2015,Mexico,4936.0
 2020,Mexico,6385.0
-1990,(country),0.0
-1995,(country),0.0
-2000,(country),0.0
-2005,(country),0.0
-2010,(country),0.0
-2015,(country),0.0
-2020,(country),0.0
 1990,Moldova,15.0
 1995,Moldova,316.0
 2000,Moldova,570.0
@@ -1028,20 +1014,20 @@ Year,Country,Population
 2010,Netherlands,78533.0
 2015,Netherlands,70424.0
 2020,Netherlands,71531.0
-1990,Caledonia,964.0
-1995,Caledonia,990.0
-2000,Caledonia,912.0
-2005,Caledonia,943.0
-2010,Caledonia,1123.0
-2015,Caledonia,1302.0
-2020,Caledonia,1482.0
-1990,Zealand,250531.0
-1995,Zealand,257694.0
-2000,Zealand,310316.0
-2005,Zealand,363477.0
-2010,Zealand,454694.0
-2015,Zealand,510269.0
-2020,Zealand,525977.0
+1990,New Caledonia,964.0
+1995,New Caledonia,990.0
+2000,New Caledonia,912.0
+2005,New Caledonia,943.0
+2010,New Caledonia,1123.0
+2015,New Caledonia,1302.0
+2020,New Caledonia,1482.0
+1990,New Zealand,250531.0
+1995,New Zealand,257694.0
+2000,New Zealand,310316.0
+2005,New Zealand,363477.0
+2010,New Zealand,454694.0
+2015,New Zealand,510269.0
+2020,New Zealand,525977.0
 1990,Nicaragua,725.0
 1995,Nicaragua,785.0
 2000,Nicaragua,800.0
@@ -1070,13 +1056,13 @@ Year,Country,Population
 2010,Niue,754.0
 2015,Niue,925.0
 2020,Niue,1040.0
-1990,Korea,-46.0
-1995,Korea,125.0
-2000,Korea,253.0
-2005,Korea,275.0
-2010,Korea,47.0
-2015,Korea,18.0
-2020,Korea,64.0
+1990,North Korea,-46.0
+1995,North Korea,125.0
+2000,North Korea,253.0
+2005,North Korea,275.0
+2010,North Korea,47.0
+2015,North Korea,18.0
+2020,North Korea,64.0
 1990,Macedonia,40724.0
 1995,Macedonia,46518.0
 2000,Macedonia,49560.0
@@ -1133,13 +1119,13 @@ Year,Country,Population
 2010,Panama,-18.0
 2015,Panama,-29.0
 2020,Panama,-46.0
-1990,Guinea.4,-13916.0
-1995,Guinea.4,-14258.0
-2000,Guinea.4,-10675.0
-2005,Guinea.4,-10675.0
-2010,Guinea.4,-9056.0
-2015,Guinea.4,-9183.0
-2020,Guinea.4,-9219.0
+1990,Papua New Guinea.4,-13916.0
+1995,Papua New Guinea.4,-14258.0
+2000,Papua New Guinea.4,-10675.0
+2005,Papua New Guinea.4,-10675.0
+2010,Papua New Guinea.4,-9056.0
+2015,Papua New Guinea.4,-9183.0
+2020,Papua New Guinea.4,-9219.0
 1990,Paraguay,277.0
 1995,Paraguay,343.0
 2000,Paraguay,360.0
@@ -1294,13 +1280,13 @@ Year,Country,Population
 2010,Principe,0.0
 2015,Principe,0.0
 2020,Principe,0.0
-1990,Arabia,586.0
-1995,Arabia,1090.0
-2000,Arabia,1530.0
-2005,Arabia,2960.0
-2010,Arabia,12600.0
-2015,Arabia,14480.0
-2020,Arabia,15444.0
+1990,Saudi Arabia,586.0
+1995,Saudi Arabia,1090.0
+2000,Saudi Arabia,1530.0
+2005,Saudi Arabia,2960.0
+2010,Saudi Arabia,12600.0
+2015,Saudi Arabia,14480.0
+2020,Saudi Arabia,15444.0
 1990,Senegal,149.0
 1995,Senegal,195.0
 2000,Senegal,240.0
@@ -1322,13 +1308,13 @@ Year,Country,Population
 2010,Seychelles,2924.0
 2015,Seychelles,2979.0
 2020,Seychelles,3181.0
-1990,Leone,120.0
-1995,Leone,195.0
-2000,Leone,260.0
-2005,Leone,1835.0
-2010,Leone,3320.0
-2015,Leone,3990.0
-2020,Leone,4447.0
+1990,Sierra Leone,120.0
+1995,Sierra Leone,195.0
+2000,Sierra Leone,260.0
+2005,Sierra Leone,1835.0
+2010,Sierra Leone,3320.0
+2015,Sierra Leone,3990.0
+2020,Sierra Leone,4447.0
 1990,Singapore,24238.0
 1995,Singapore,26235.0
 2000,Singapore,29652.0
@@ -1336,13 +1322,6 @@ Year,Country,Population
 2010,Singapore,44844.0
 2015,Singapore,49493.0
 2020,Singapore,55761.0
-1990,part).2,0.0
-1995,part).2,0.0
-2000,part).2,0.0
-2005,part).2,0.0
-2010,part).2,0.0
-2015,part).2,0.0
-2020,part).2,0.0
 1990,Slovakia,2679.0
 1995,Slovakia,4586.0
 2000,Slovakia,6184.0
@@ -1357,13 +1336,13 @@ Year,Country,Population
 2010,Slovenia,7987.0
 2015,Slovenia,7697.0
 2020,Slovenia,8082.0
-1990,Islands.16,692.0
-1995,Islands.16,907.0
-2000,Islands.16,1060.0
-2005,Islands.16,1331.0
-2010,Islands.16,1632.0
-2015,Islands.16,2021.0
-2020,Islands.16,2356.0
+1990,Solomon Islands.16,692.0
+1995,Solomon Islands.16,907.0
+2000,Solomon Islands.16,1060.0
+2005,Solomon Islands.16,1331.0
+2010,Solomon Islands.16,1632.0
+2015,Solomon Islands.16,2021.0
+2020,Solomon Islands.16,2356.0
 1990,Somalia,361.0
 1995,Somalia,2113.0
 2000,Somalia,3750.0
@@ -1371,27 +1350,27 @@ Year,Country,Population
 2010,Somalia,6190.0
 2015,Somalia,8650.0
 2020,Somalia,10155.0
-1990,Africa,54485.0
-1995,Africa,57994.0
-2000,Africa,77622.0
-2005,Africa,110148.0
-2010,Africa,149712.0
-2015,Africa,172558.0
-2020,Africa,193919.0
-1990,Korea.2,23420.0
-1995,Korea.2,28151.0
-2000,Korea.2,35032.0
-2005,Korea.2,48987.0
-2010,Korea.2,80134.0
-2015,Korea.2,103008.0
-2020,Korea.2,117792.0
-1990,Sudan,0.0
-1995,Sudan,0.0
-2000,Sudan,0.0
-2005,Sudan,0.0
-2010,Sudan,0.0
-2015,Sudan,7480.0
-2020,Sudan,9510.0
+1990,South Africa,54485.0
+1995,South Africa,57994.0
+2000,South Africa,77622.0
+2005,South Africa,110148.0
+2010,South Africa,149712.0
+2015,South Africa,172558.0
+2020,South Africa,193919.0
+1990,South Korea.2,23420.0
+1995,South Korea.2,28151.0
+2000,South Korea.2,35032.0
+2005,South Korea.2,48987.0
+2010,South Korea.2,80134.0
+2015,South Korea.2,103008.0
+2020,South Korea.2,117792.0
+1990,South Sudan,0.0
+1995,South Sudan,0.0
+2000,South Sudan,0.0
+2005,South Sudan,0.0
+2010,South Sudan,0.0
+2015,South Sudan,7480.0
+2020,South Sudan,9510.0
 1990,Spain,12739.0
 1995,Spain,12298.0
 2000,Spain,9899.0
@@ -1400,19 +1379,19 @@ Year,Country,Population
 2015,Spain,11354.0
 2020,Spain,11341.0
 1990,Lanka,46609.0
-1995,Lanka,52424.0
-2000,Lanka,58060.0
-2005,Lanka,70355.0
-2010,Lanka,96015.0
-2015,Lanka,119231.0
-2020,Lanka,138982.0
-1990,Sudan.2,1218.0
-1995,Sudan.2,2734.0
-2000,Sudan.2,4090.0
-2005,Sudan.2,18831.0
-2010,Sudan.2,25440.0
-2015,Sudan.2,19730.0
-2020,Sudan.2,20992.0
+1995,Sri Lanka,52424.0
+2000,Sri Lanka,58060.0
+2005,Sri Lanka,70355.0
+2010,Sri Lanka,96015.0
+2015,Sri Lanka,119231.0
+2020,Sri Lanka,138982.0
+1990,Sudan,1218.0
+1995,Sudan,2734.0
+2000,Sudan,4090.0
+2005,Sudan,18831.0
+2010,Sudan,25440.0
+2015,Sudan,19730.0
+2020,Sudan,20992.0
 1990,Suriname,68.0
 1995,Suriname,76.0
 2000,Suriname,90.0
@@ -1455,13 +1434,13 @@ Year,Country,Population
 2010,Tajikistan,100.0
 2015,Tajikistan,160.0
 2020,Tajikistan,171.0
-1990,Tanzania,1422.0
-1995,Tanzania,1768.0
-2000,Tanzania,1970.0
-2005,Tanzania,2300.0
-2010,Tanzania,3820.0
-2015,Tanzania,4500.0
-2020,Tanzania,5061.0
+1990,United Republic of Tanzania,1422.0
+1995,United Republic of Tanzania,1768.0
+2000,United Republic of Tanzania,1970.0
+2005,United Republic of Tanzania,2300.0
+2010,United Republic of Tanzania,3820.0
+2015,United Republic of Tanzania,4500.0
+2020,United Republic of Tanzania,5061.0
 1990,Thailand,15241.0
 1995,Thailand,17929.0
 2000,Thailand,21445.0
@@ -1497,13 +1476,13 @@ Year,Country,Population
 2010,Tonga,10060.0
 2015,Tonga,11880.0
 2020,Tonga,13236.0
-1990,Tobago,920.0
-1995,Tobago,1205.0
-2000,Tobago,1410.0
-2005,Tobago,1560.0
-2010,Tobago,1690.0
-2015,Tobago,1910.0
-2020,Tobago,2013.0
+1990,Trinidad and Tobago,920.0
+1995,Trinidad and Tobago,1205.0
+2000,Trinidad and Tobago,1410.0
+2005,Trinidad and Tobago,1560.0
+2010,Trinidad and Tobago,1690.0
+2015,Trinidad and Tobago,1910.0
+2020,Trinidad and Tobago,2013.0
 1990,Tunisia,411.0
 1995,Tunisia,469.0
 2000,Tunisia,500.0
@@ -1553,27 +1532,27 @@ Year,Country,Population
 2010,Ukraine,16360.0
 2015,Ukraine,17090.0
 2020,Ukraine,18568.0
-1990,Emirates,561.0
-1995,Emirates,1005.0
-2000,Emirates,1390.0
-2005,Emirates,2800.0
-2010,Emirates,5240.0
-2015,Emirates,8090.0
-2020,Emirates,11136.0
-1990,Kingdom,1038777.0
-1995,Kingdom,1012598.0
-2000,Kingdom,1024215.0
-2005,Kingdom,1008761.0
-2010,Kingdom,1061627.0
-2015,Kingdom,1077828.0
-2020,Kingdom,1144914.0
-1990,States,11308.0
-1995,States,2928.0
-2000,States,-2823.0
-2005,States,3009.0
-2010,States,10641.0
-2015,States,15357.0
-2020,States,13174.0
+1990,United Arab Emirates,561.0
+1995,United Arab Emirates,1005.0
+2000,United Arab Emirates,1390.0
+2005,United Arab Emirates,2800.0
+2010,United Arab Emirates,5240.0
+2015,United Arab Emirates,8090.0
+2020,United Arab Emirates,11136.0
+1990,United Kingdom,1038777.0
+1995,United Kingdom,1012598.0
+2000,United Kingdom,1024215.0
+2005,United Kingdom,1008761.0
+2010,United Kingdom,1061627.0
+2015,United Kingdom,1077828.0
+2020,United Kingdom,1144914.0
+1990,United States of America,11308.0
+1995,United States of America,2928.0
+2000,United States of America,-2823.0
+2005,United States of America,3009.0
+2010,United States of America,10641.0
+2015,United States of America,15357.0
+2020,United States of America,13174.0
 1990,Islands.20,0.0
 1995,Islands.20,0.0
 2000,Islands.20,0.0
