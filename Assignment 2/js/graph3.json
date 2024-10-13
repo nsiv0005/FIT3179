@@ -1,0 +1,77 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for Australian-born and Overseas-born males.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/3.1_pop_data.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"calculate": "-datum['OS-born males (%)']", "as": "Migrant males"},  
+      {"calculate": "datum['Aust-born males (%)']", "as": "Australian males"}  
+    ],
+    "spacing": 0,
+    "hconcat": [
+      {
+        "transform": [{"filter": "datum['Migrant males'] != null"}],
+        "title": "Migrant Males",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Age group (years)",
+            "type": "ordinal",
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "Migrant males",
+            "title": "Population (%)",
+            "axis": {"format": ".1f"}
+          },
+          "color": {"value": "#ff7f0e"} 
+        }
+      },
+      {
+        "width": 20,
+        "view": {"stroke": null},
+        "mark": {
+          "type": "text",
+          "align": "center"
+        },
+        "encoding": {
+          "y": {
+            "field": "Age group (years)",
+            "type": "ordinal",
+            "axis": null,
+            "sort": "descending"
+          },
+          "text": {"field": "Age group (years)", "type": "ordinal"}
+        }
+      },
+      {
+        "transform": [{"filter": "datum['Australian males'] != null"}],
+        "title": "Australian Males",
+        "mark": "bar",
+        "encoding": {
+          "y": {
+            "field": "Age group (years)",
+            "type": "ordinal",
+            "axis": null,
+            "sort": "descending"
+          },
+          "x": {
+            "aggregate": "sum",
+            "field": "Australian males",
+            "title": "Population (%)",
+            "axis": {"format": ".1f"}
+          },
+          "color": {"value": "#1f77b4"}  
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }
+  
