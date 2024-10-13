@@ -12,7 +12,7 @@
         "url": "https://raw.githubusercontent.com/AusTopo/Australia-SA3-Map/main/sa3_aus.json",
         "format": {
           "type": "topojson",
-          "feature": "sa3"
+          "feature": "ABS_SA3_2011"
         }
       },
       "mark": {
@@ -24,7 +24,7 @@
     },
     {
       "data": {
-        "url": "path_to_your_aus_locations.csv",
+        "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/aus_locations.csv",
         "format": {"type": "csv"}
       },
       "mark": "circle",
