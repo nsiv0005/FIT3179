@@ -1,19 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for Australian-born and Overseas-born males.",
+    "description": "A population pyramid for Australian-born and Overseas-born, with males and females side by side.",
     "data": {
       "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/3.1_pop_data.csv",
       "format": {"type": "csv"}
     },
     "transform": [
       {"calculate": "-datum['OS-born males (%)']", "as": "Migrant males"},  
-      {"calculate": "datum['Aust-born males (%)']", "as": "Australian males"}  
+      {"calculate": "datum['Aust-born males (%)']", "as": "Australian males"}, 
+      {"calculate": "-datum['OS-born females (%)']", "as": "Migrant females"},  
+      {"calculate": "datum['Aust-born females (%)']", "as": "Australian females"}  
     ],
     "spacing": 0,
     "hconcat": [
       {
-        "transform": [{"filter": "datum['Migrant males'] != null"}],
-        "title": "Migrant Males",
+        "title": "Migrant Population",
         "mark": "bar",
         "encoding": {
           "y": {
@@ -23,13 +24,27 @@
             "sort": "descending"
           },
           "x": {
-            "aggregate": "sum",
-            "field": "Migrant males",
+            "field": "Population",
+            "type": "quantitative",
             "title": "Population (%)",
-            "axis": {"format": ".1f"}
+            "scale": {"domain": [-3, 3]}  
           },
-          "color": {"value": "#ff7f0e"} 
-        }
+          "color": {
+            "field": "Gender",
+            "type": "nominal",
+            "scale": {"range": ["#ff7f0e", "#ffd4a3"]},  
+            "legend": {"title": "Gender"}
+          }
+        },
+        "transform": [
+          {
+            "fold": [
+              "Migrant males",
+              "Migrant females"
+            ],
+            "as": ["Gender", "Population"]
+          }
+        ]
       },
       {
         "width": 20,
@@ -49,8 +64,7 @@
         }
       },
       {
-        "transform": [{"filter": "datum['Australian males'] != null"}],
-        "title": "Australian Males",
+        "title": "Australian Population",
         "mark": "bar",
         "encoding": {
           "y": {
@@ -60,13 +74,27 @@
             "sort": "descending"
           },
           "x": {
-            "aggregate": "sum",
-            "field": "Australian males",
+            "field": "Population",
+            "type": "quantitative",
             "title": "Population (%)",
-            "axis": {"format": ".1f"}
+            "scale": {"domain": [-3, 3]}  
           },
-          "color": {"value": "#1f77b4"}  
-        }
+          "color": {
+            "field": "Gender",
+            "type": "nominal",
+            "scale": {"range": ["#1f77b4", "#87cefa"]}, 
+            "legend": {"title": "Gender"}
+          }
+        },
+        "transform": [
+          {
+            "fold": [
+              "Australian males",
+              "Australian females"
+            ],
+            "as": ["Gender", "Population"]
+          }
+        ]
       }
     ],
     "config": {

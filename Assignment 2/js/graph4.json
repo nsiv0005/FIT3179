@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Migrant Arrivals, Departures, and Net Overseas Migration",
+    "data": {
+      "url": "data_placeholder.csv" 
+    },
+    "width": 700,
+    "height": 400,
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": "Date",
+        "axis": {"format": "%b-%y"}
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Population ('000)"
+      },
+      "color": {
+        "field": "category",
+        "type": "nominal",
+        "title": "Migration Category"
+      }
+    },
+    "transform": [
+      {
+        "fold": ["Migrant arrivals", "Migrant departures", "Net overseas migration"],
+        "as": ["category", "value"]
+      }
+    ]
+  }
+  
