@@ -9,7 +9,7 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/AusTopo/Australia-SA3-Map/main/sa3_aus.json",
+        "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/ABS_SA3_2011.json",
         "format": {
           "type": "topojson",
           "feature": "ABS_SA3_2011"
