@@ -1,4 +1,4 @@
-body * {
+body *{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -7,7 +7,7 @@ h1 {
 }
 
 body {
-    background-color: red;
+    background-color: lightgray;
 }
 
 .page {
@@ -41,33 +41,4 @@ h1 {
 
 .small-font {
     font-size: 14px;
-}
-
-/* For smaller graphs (3 and 5) */
-.vis-container-small {
-    width: 150px;
-    height: 120px;
-    margin: 0 auto;
-}
-
-/* Larger gap between the two small graphs */
-.graph-gap {
-    margin-left: 50px; /* Increased gap */
-}
-
-/* Align the first three graphs on the left side */
-.pure-g .pure-u-1-2 {
-    text-align: left; /* Align graph containers to the left */
-}
-
-/* Optional: Add margins to the visualizations to center text and adjust layout */
-.pure-u-1-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Space out descriptions more cleanly */
-.description {
-    padding-bottom: 20px;
 }
