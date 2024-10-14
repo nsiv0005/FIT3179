@@ -27,7 +27,7 @@
             "field": "Population",
             "type": "quantitative",
             "title": "Population (%)",
-            "scale": {"domain": [-3, 3]}  
+            "scale": {"domain": [-3, 0]}  
           },
           "color": {
             "field": "Gender",
@@ -77,7 +77,7 @@
             "field": "Population",
             "type": "quantitative",
             "title": "Population (%)",
-            "scale": {"domain": [-3, 3]}  
+            "scale": {"domain": [0, 3]}  
           },
           "color": {
             "field": "Gender",
