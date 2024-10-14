@@ -1,8 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Migrant Arrivals, Departures, and Net Overseas Migration",
+    "title": "Migrant Arrivals, Departures, and Net Overseas Migration",
     "data": {
-      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Graph_1.1-Overseas%20migration.csv",  
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Updated_Overseas_Migration_Data.csv",  
       "format": {
         "type": "csv"
       }
@@ -31,9 +32,9 @@
     "transform": [
       {
         "fold": [
-          "Migrant arrivals(000)", 
-          "Migrant departures(000)", 
-          "Net overseas migration(000)"
+          "Migrant arrivals (000)", 
+          "Migrant departures (000)", 
+          "Net overseas migration(b) (000)"
         ],
         "as": ["category", "value"]
       }

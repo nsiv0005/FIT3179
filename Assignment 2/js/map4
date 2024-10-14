@@ -1,59 +1,58 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 450,
-    "title": "Austrlian Migrant Residence 2022-2023",
-    "projection": {
-      "type": "mercator"
-    },
-    "layer": [
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/ne_10m_admin_1_states_provinces.json",
-          "format": {
-            "type": "topojson",
-            "feature": "ne_10m_admin_1_states_provinces"
-          }
-        },
-        "mark": {
-          "type": "geoshape",
-          "fill": "#b8e994",  
-          "stroke": "white"
-        },
-        "encoding": {}
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Full_Table_with_Coordinates.csv",
-          "format": {"type": "csv"}
-        },
-        "mark": {
-          "type": "circle",
-          "color": "red"
-        },
-        "encoding": {
-          "longitude": {"field": "Longitude", "type": "quantitative"},
-          "latitude": {"field": "Latitude", "type": "quantitative"},
-          "size": {
-            "field": "NOM in 2022 and 2023",
-            "title": "Number of Migrants",
-            "type": "quantitative",
-            "scale": {"range": [50, 3000]}
-          },
-          "opacity": {
-            "field": "NOM in 2022 and 2023",  
-            "type": "quantitative",
-            "scale": {"domain": [0, 30000], "range": [0.3, 1]},
-            "legend": null
-          },
-          "tooltip": [
-            {"field": "SA3 Area", "type": "nominal", "title": "SA3 Area"},
-            {"field": "NOM in 2022 and 2023", "type": "quantitative", "title": "Number of Migrants"},  
-            {"field": "Latitude", "type": "quantitative", "title": "Latitude"},
-            {"field": "Longitude", "type": "quantitative", "title": "Longitude"}
-          ]
-        }
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"width": 800,
+"height": 450,
+"title": "Austrlian Migrant Residence 2022-2023",
+"projection": {
+  "type": "mercator"
+},
+"layer": [
+  {
+    "data": {
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/ne_10m_admin_1_states_provinces.json",
+      "format": {
+        "type": "topojson",
+        "feature": "ne_10m_admin_1_states_provinces"
       }
-    ]
+    },
+    "mark": {
+      "type": "geoshape",
+      "fill": "#b8e994",  
+      "stroke": "white"
+    },
+    "encoding": {}
+  },
+  {
+    "data": {
+      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Full_Table_with_Coordinates.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {
+      "type": "circle",
+      "color": "red"
+    },
+    "encoding": {
+      "longitude": {"field": "Longitude", "type": "quantitative"},
+      "latitude": {"field": "Latitude", "type": "quantitative"},
+      "size": {
+        "field": "NOM in 2022 and 2023",
+        "title": "Number of Migrants",
+        "type": "quantitative",
+        "scale": {"range": [50, 3000]}
+      },
+      "opacity": {
+        "field": "NOM in 2022 and 2023",  
+        "type": "quantitative",
+        "scale": {"domain": [0, 30000], "range": [0.3, 1]},
+        "legend": null
+      },
+      "tooltip": [
+        {"field": "SA3 Area", "type": "nominal", "title": "SA3 Area"},
+        {"field": "NOM in 2022 and 2023", "type": "quantitative", "title": "Number of Migrants"},  
+        {"field": "Latitude", "type": "quantitative", "title": "Latitude"},
+        {"field": "Longitude", "type": "quantitative", "title": "Longitude"}
+      ]
+    }
   }
-  
+]
+}

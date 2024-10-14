@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Multiple Visualisations | An Example</title>
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Multiple Visualisations</h1>
+        <p>This page demonstrates how you can use pure.css grid for your layout.</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2>Graph 1</h2>
+          <p>Graph 1 description goes here.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis1" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <h2>Graph 2</h2>
+          <p>Graph 2 description goes here.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-3">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-3">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by <a href="#" target="_blank">Your Name</a>. The datasource is <a href="#"
+            target=" _blank">some data repository online</a>.</p>
+      </div>
+    </div>
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    // Define your visualization specs
+    var specVis1 = "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/map3"; // Replace with your graph spec
+    var specVis2 = "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/map4"; // Replace with your graph spec
+    var specVis3 = "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/graph2"; // Replace with your graph spec
+    var specVis4 = "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/graph3.json"; // Replace with your graph spec
+    var specVis5 = "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/js/graph4.json"; // Replace with your graph spec
+
+    // Embed the visualizations
+    vegaEmbed('#vis1', specVis1, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis2', specVis2, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis3', specVis3, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis4', specVis4, { "actions": false }).catch(console.error);
+    vegaEmbed('#vis5', specVis5, { "actions": false }).catch(console.error);
+  </script>
+</body>
+
+</html>
