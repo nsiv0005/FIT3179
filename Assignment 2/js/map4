@@ -1,7 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"width": 800,
-"height": 450,
+"width": "container",
 "title": "Austrlian Migrant Residence 2022-2023",
 "projection": {
   "type": "mercator"

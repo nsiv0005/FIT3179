@@ -1,7 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 450,
+  "width": "container",
   "title": "Countries with Increasing Migrant Populations in Australia",
   "data": {
     "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Graph_1.3_Estimated_resident_population_by_country_of_birth.csv"
