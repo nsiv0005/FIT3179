@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
-  "height": 400,
+  "width": 650,
+  "height": 350,
   "title": "Immigration Data to Australia by Country",
   "projection": {
     "type": "equalEarth"

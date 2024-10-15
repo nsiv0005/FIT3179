@@ -1,105 +1,116 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for Australian-born and Overseas-born, with males and females side by side.",
-    "data": {
-      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/3.1_pop_data.csv",
-      "format": {"type": "csv"}
-    },
-    "transform": [
-      {"calculate": "-datum['OS-born males (%)']", "as": "Migrant males"},  
-      {"calculate": "datum['Aust-born males (%)']", "as": "Australian males"}, 
-      {"calculate": "-datum['OS-born females (%)']", "as": "Migrant females"},  
-      {"calculate": "datum['Aust-born females (%)']", "as": "Australian females"}  
-    ],
-    "spacing": 0,
-    "hconcat": [
-      {
-        "title": "Migrant Population",
-        "mark": "bar",
-        "encoding": {
-          "y": {
-            "field": "Age group (years)",
-            "type": "ordinal",
-            "axis": null,
-            "sort": "descending"
-          },
-          "x": {
-            "field": "Population",
-            "type": "quantitative",
-            "title": "Population (%)",
-            "scale": {"domain": [-3, 0]}  
-          },
-          "color": {
-            "field": "Gender",
-            "type": "nominal",
-            "scale": {"range": ["#ff7f0e", "#ffd4a3"]},  
-            "legend": {"title": "Gender"}
-          }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A population pyramid for Australian-born and Overseas-born, with males and females side by side.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/3.1_pop_data.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "-datum['OS-born males (%)']", "as": "Migrant males"},  
+    {"calculate": "datum['Aust-born males (%)']", "as": "Australian males"}, 
+    {"calculate": "-datum['OS-born females (%)']", "as": "Migrant females"},  
+    {"calculate": "datum['Aust-born females (%)']", "as": "Australian females"}  
+  ],
+  "spacing": 0,
+  "hconcat": [
+    {
+      "title": "Migrant Population",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age group (years)",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
         },
-        "transform": [
-          {
-            "fold": [
-              "Migrant males",
-              "Migrant females"
-            ],
-            "as": ["Gender", "Population"]
-          }
-        ]
-      },
-      {
-        "width": 20,
-        "view": {"stroke": null},
-        "mark": {
-          "type": "text",
-          "align": "center"
+        "x": {
+          "field": "Population",
+          "type": "quantitative",
+          "title": "Population (%)",
+          "scale": {"domain": [-6, 0]}  
         },
-        "encoding": {
-          "y": {
-            "field": "Age group (years)",
-            "type": "ordinal",
-            "axis": null,
-            "sort": "descending"
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Migrant males", "Migrant females", "Australian males", "Australian females"],
+            "range": ["#ff7f0e", "#ffd4a3", "#1f77b4", "#87cefa"]
           },
-          "text": {"field": "Age group (years)", "type": "ordinal"}
+          "legend": {
+            "title": "Population Group",
+            "orient": "right"
+          }
         }
       },
-      {
-        "title": "Australian Population",
-        "mark": "bar",
-        "encoding": {
-          "y": {
-            "field": "Age group (years)",
-            "type": "ordinal",
-            "axis": null,
-            "sort": "descending"
-          },
-          "x": {
-            "field": "Population",
-            "type": "quantitative",
-            "title": "Population (%)",
-            "scale": {"domain": [0, 3]}  
-          },
-          "color": {
-            "field": "Gender",
-            "type": "nominal",
-            "scale": {"range": ["#1f77b4", "#87cefa"]}, 
-            "legend": {"title": "Gender"}
-          }
-        },
-        "transform": [
-          {
-            "fold": [
-              "Australian males",
-              "Australian females"
-            ],
-            "as": ["Gender", "Population"]
-          }
-        ]
-      }
-    ],
-    "config": {
+      "transform": [
+        {
+          "fold": [
+            "Migrant males",
+            "Migrant females"
+          ],
+          "as": ["Gender", "Population"]
+        }
+      ]
+    },
+    {
+      "width": 20,
       "view": {"stroke": null},
-      "axis": {"grid": false}
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {
+          "field": "Age group (years)",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        },
+        "text": {"field": "Age group (years)", "type": "ordinal"}
+      }
+    },
+    {
+      "title": "Australian Population",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age group (years)",
+          "type": "ordinal",
+          "axis": null,
+          "sort": "descending"
+        },
+        "x": {
+          "field": "Population",
+          "type": "quantitative",
+          "title": "Population (%)",
+          "scale": {"domain": [0, 6]}  
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Migrant males", "Migrant females", "Australian males", "Australian females"],
+            "range": ["#ff7f0e", "#ffd4a3", "#1f77b4", "#87cefa"]
+          },
+          "legend": {
+            "title": "Population Group",
+            "orient": "right"
+          }
+        }
+      },
+      "transform": [
+        {
+          "fold": [
+            "Australian males",
+            "Australian females"
+          ],
+          "as": ["Gender", "Population"]
+        }
+      ]
     }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": false}
   }
-  
+}
