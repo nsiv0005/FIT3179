@@ -11,7 +11,10 @@
       "as": ["Year", "Population"]
     }
   ],
-  "mark": "bar",
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
   "encoding": {
     "x": {
       "field": "Country",
@@ -20,7 +23,7 @@
       "axis": {"labelAngle": -45}
     },
     "xOffset": {
-      "field": "Year"  
+      "field": "Year"
     },
     "y": {
       "field": "Population",
@@ -32,7 +35,7 @@
       "type": "nominal",
       "title": "Year",
       "scale": {
-        "scheme": "set1"  
+        "scheme": "set2"
       }
     },
     "tooltip": [
