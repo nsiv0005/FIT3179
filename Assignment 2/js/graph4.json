@@ -8,8 +8,7 @@
         "type": "csv"
       }
     },
-    "width": 700,
-    "height": 400,
+    "width": "container",
     "mark": "line",
     "encoding": {
       "x": {
