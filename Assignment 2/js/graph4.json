@@ -11,7 +11,7 @@
   "vconcat": [
     {
       "width": 600,
-      "height": 200,
+      "height": 100,
       "mark": "line",
       "selection": {
         "brush": {"type": "interval", "encodings": ["x"]}
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "width": 600,
+      "width": 650,
       "height": 200,
       "mark": "line",
       "encoding": {

@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A population pyramid for Australian-born and Overseas-born, with males and females side by side.",
+  "title": "Australian Migrant Population vs Australian Born Population",
   "data": {
     "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/3.1_pop_data.csv",
     "format": {"type": "csv"}
