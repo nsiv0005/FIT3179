@@ -1,49 +1,83 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Migrant Arrivals, Departures, and Net Overseas Migration",
-    "title": "Migrant Arrivals, Departures, and Net Overseas Migration",
-    "data": {
-      "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Updated_Overseas_Migration_Data.csv",  
-      "format": {
-        "type": "csv"
-      }
-    },
-    "width": 600,
-    "height": 200,
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "type": "temporal",
-        "title": "Date",
-        "axis": {"format": "%b-%y"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Migrant Arrivals, Departures, and Net Overseas Migration",
+  "title": "Migrant Arrivals, Departures, and Net Overseas Migration",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nsiv0005/FIT3179/refs/heads/main/Assignment%202/data/Updated_Overseas_Migration_Data.csv",  
+    "format": {
+      "type": "csv"
+    }
+  },
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 200,
+      "mark": "line",
+      "selection": {
+        "brush": {"type": "interval", "encodings": ["x"]}
       },
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": "Population ('000)"
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Date",
+          "axis": {"format": "%b-%y"}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Population ('000)"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Migration Category"
+        }
       },
-      "color": {
-        "field": "category",
-        "type": "nominal",
-        "title": "Migration Category"
-      }
+      "transform": [
+        {
+          "fold": [
+            "Migrant arrivals (000)", 
+            "Migrant departures (000)", 
+            "Net overseas migration(b) (000)"
+          ],
+          "as": ["category", "value"]
+        }
+      ]
     },
-    "transform": [
-      {
-        "fold": [
-          "Migrant arrivals (000)", 
-          "Migrant departures (000)", 
-          "Net overseas migration(b) (000)"
-        ],
-        "as": ["category", "value"]
-      }
-    ]
-  }
-  
-
-
-
-
-  
-  
+    {
+      "width": 600,
+      "height": 200,
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": "Date",
+          "scale": {"domain": {"selection": "brush"}},
+          "axis": {"format": "%b-%y"}
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Population ('000)"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "Migration Category"
+        }
+      },
+      "transform": [
+        {
+          "fold": [
+            "Migrant arrivals (000)", 
+            "Migrant departures (000)", 
+            "Net overseas migration(b) (000)"
+          ],
+          "as": ["category", "value"]
+        }
+      ]
+    }
+  ]
+}
